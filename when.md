@@ -12,13 +12,11 @@ Let's first explore the check-ins made by users outside of their home country du
 
 {% include abroad_checkins_monthly.html %}
 
-<!-- Add plot -->
-
 The most popular time of the year to go abroad is during the summer. As you can see, there is an abundance of check-ins made out-of-country during the months of June, July, August and September. This result is expected: this period of the year coincides with warmer and nicer weather in most regions of the world.  
 
 Throughout most of the year, people engage in a consistent routine including commuting, working and other regular weekly activities. This results in a low variability of their movement. When traveling, this routine is broken and movement variability increases. This deviation can be measured by *entropy*: the lower the entropy, the more people are adhering to their routines. It follows that we can expect a higher entropy when people's movements are less predictable, when they're on vacation for example. To explore that, we compute the monthly average entropy of users. 
 
-<!-- Add plot -->
+{% include entropy.html %}
 
 <!-- Add observations -->
 
