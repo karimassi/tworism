@@ -16,14 +16,15 @@ To have a fine-grained view, we independently consider travel to and from admini
 
 The US is divided into 50 states and Washington, D.C. We consider travel to and from each of the states and are interested in the partitioning of inter-state travel depending on the origin and destination. The following heatmap illustrates this. 
 
-<div style="padding-right: 2000px;">
+<div style="display: flex; justify-content: center;">
     {% include heatmap_us.html %}
 </div>
 
-
 Additionally, it is interesting to spatially visualize the states and their popularity as a destination, as shown on the map below. 
 
-{% include map_us.html %}
+<div style="display: flex; justify-content: center;">
+    {% include map_us.html %}
+</div>
 
 The former figure shows the popularity of each state depending on the origin of its visitors. The latter only shows the popularity of each destination state, independently of tourists' home states. 
 
@@ -38,11 +39,15 @@ More generally, we observe travel between neighboring states: this is expected a
 
 Germany is divided into 16 regions called *Bundesländer*. Just like for the United States, we want to analyse inter-state movement in the country. Despite not being as large a country as the United States, Germany has several major cities and regions (e.g. Munich in Bayern, Frankfurt in Hessen, Stuttgart in Baden, the city and state of Berlin) that are densly populated. We expect these hubs to be the center of activity. 
 
-{% include heatmap_de.html max-width="100px"%}
+<div style="display: flex; justify-content: center;">
+    {% include heatmap_de.html %}
+</div>
  
 And now the map: 
 
-{% include map_de.html %}
+<div style="display: flex; justify-content: center;">
+    {% include map_de.html %}
+</div>
 
 There is no single region that dominates, as opposed to the US where a few main states are under the spotlight. Berlin tends to receive a lot of visitors as it is the capital city. Naturally, most traveling takes place between neighboring states: this might be due to people living in one and commuting to another. Finally, Bayern receives the highest amount of visitors during autumn. Coincidence? 🍺. We think not. 🍻!
 
@@ -50,11 +55,15 @@ There is no single region that dominates, as opposed to the US where a few main 
 
 Ask any Parisian and they’ll tell you there are two regions in the country: Paris, and the rest. This is especially apparent in our data (see heatmap), as Parisians take up a vast majority of the country's check-ins. What’s more, those who don’t come from Paris mostly tend to visit... you guessed it, Paris! 
 
-{% include heatmap_fr.html %}
+<div style="display: flex; justify-content: center;">
+    {% include heatmap_fr.html %}
+</div>
 
 Because of the particularity mentionned above, we did something a bit different when we plotted the data on the map of France. What we see represents how often people travel from Paris’ region, Île-de-France, to other regions in the country.
 
-{% include map_fr.html %}
+<div style="display: flex; justify-content: center;">
+    {% include map_fr.html %}
+</div>
 
 
 A few observations on travel trends from Île-de-France users:
